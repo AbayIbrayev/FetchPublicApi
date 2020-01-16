@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+  background-image: linear-gradient(180deg, rgba(247, 247, 247, 1) 23.8%, rgba(252, 221, 221, 1) 92%);
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.results__item {
+  flex-basis: 40%;
+}
+
+.result {
+  background-color: #fff;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  margin-top: 0;
+}
+
+.result img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  background-color: darksalmon;
+  border: 0;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:focus {
+  outline: none
+}
+
+@media screen and (max-width: 700px) {
+  .results {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .results__item {
+    flex-basis: 65%;
+  }
+  button {
+    margin-bottom: 30px;
+  }
+  button:last-child {
+    margin-bottom: 0;
+  }
+}
